@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+<head>
+<title>Questionaire</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body >
+	<div class="font header">
+		<div class="title">
+			UI Survey
+		</div>
+		<div class="subtitle">
+			What do you think about the Reddit User interface?
+		</div>
+	</div>
+	
+	<div class="pleasefill">
+	Please fill out the Survey Below:
+	</div>
+	
+	<div>
+	<div>	
+		<div class="redditimg w3-center">
+		<a href="https://www.reddit.com/">
+			<img src="C:\Users\linco\Desktop\PC Files\School\Year III\Semester 3 (Summer)\Anal. & Design User Interfaces\Labs\Lab 1\img\redditimg.png" alt="reddit screenshot" width="900px" class="redditimg dropshadowclass" >
+		</a>
+	</div>
+	<form action="/action_page.php" name="my form" method="POST" autocomplete="on">
+		<div class="questions">
+		<div>
+		<div class="w3-container">
+			<b>First name:</b> <input class="w3-input" type="text" name="firstname" ><br>
+		<b>Last name:</b> <input class="w3-input" type="text" name="lastname" ><br>
+			<b>Email:</b> <input class="w3-input" type="text" name="email" ><br>
+		</div>
+		<div>
+			<b>Do you identify as:</b>
+		<br>
+		<input class="w3-radio" type="radio" name="male" value="male">  Male<br>
+		<input class="w3-radio" type="radio" name="female" value="female">  Female<br>
+		<input class="w3-radio" type="radio" name="other" value="other">  Other<br><br>
+		</div>
+		
+			<b>Working-Status:</b>
+		<select class="w3-select w3-border" name="status" id="status">
+			<option value="student">Student</option>
+			<option value="Employed">Employed</option>
+			<option value="Unemployed">Unemployed</option>
+			<option value="Employed">Prefer not to say</option>
+		</select>
+		<br><br>
+			
+			<b>What features in a UI are most important to you:</b>
+		<br>
+		<p>
+		<input class="w3-check" type="checkbox" id="usability" name="usability">
+		<label for="usability">Usability</label>
+		</p>
+		<p>
+		<input class="w3-check" type="checkbox" id="efficiency" name="efficiency">
+		<label for="efficiency">Efficiency</label>
+		</p>
+		<p>
+		<input class="w3-check" type="checkbox" id="reliability" name="reliability">
+		<label for="relability">Reliability</label>
+		</p>
+		<p>
+		<input class="w3-check" type="checkbox" id="functionality" name="functionality">
+		<label for="functionality">Functionality</label>
+		</p>
+		<p>
+		<input class="w3-check" type="checkbox" id="coherence" name="coherence">
+		<label for="coherence">Coherence</label>
+		</p>
+		<p>
+		<input class="w3-check" type="checkbox" id="visual" name="visual">
+		<label for="visual">Visually Appealing</label>
+		</p>
+		<br>
+
+	  <div class="rating">
+		  <b>What would you rate this UI overall (scale of 1 to 5):</b>
+		<br>
+			<select class="w3-select w3-border" name="status" id="status">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+		</select>
+		</div>
+	
+		<br>
+			<b>What do you specifically like/dislike about the UI:</b>
+		<br>
+		<textarea cols="39" rows="5" class="comm commentbox"></textarea>
+		<br>
+		<br>
+		<div class="button">
+		<a id="submitButton">
+			Submit Survey
+		</a>
+		</div>
+		</div>
+		<br>	
+	</form>
+	</div>
+		
+	<div class="footer createdby">
+	Website created by David Stewart
+	</div>
+	
+	</div>
+		
+
+</body>
+</html>
