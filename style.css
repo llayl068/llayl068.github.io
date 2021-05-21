@@ -77,9 +77,16 @@ div.scroll{
 .questions{
 	margin-left:px;
 	float: left;
-
 	
 }
+
+.borderexample {
+ border-style:solid;
+ border-color:grey;
+padding: 5px;
+	border-radius: 5px;
+}
+
 .center {
   margin: auto;
   width: 50%;
@@ -140,7 +147,6 @@ img{
         }
 .commentbox{
 	 border-radius:9px;
-	border
 }
 
 .footer {
