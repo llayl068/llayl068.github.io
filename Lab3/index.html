@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<! This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp>
+	<link href="styles/style.css" rel="stylesheet" type="text/css">
+</head>
+<div class="wrapper">
+	
+<body>
+<div class="header">
+	<img src="images/icon4.png" alt="David's Groceries Logo" width="800px" class="icon" ></div>
+
+<!--
+<div class="tab">
+  <button class="tablinks" onclick="openInfo(event, 'Client')">Client</button>
+  <button class="tablinks" onclick="openInfo(event, 'Products')">Products</button>
+  <button class="tablinks" onclick="openInfo(event, 'Cart')">Cart</button>
+</div>
+--->
+
+<!-- Tab content -->
+<div id="Client" class="tabcontent filter">
+  <div class="title">FILTER PRODUCTS</div>
+	<br>
+	<div class="filterfollowing">Filter Products Using the Following:</div>
+	<br>
+	<!--onchange="populateListProductChoices(this.id, 'displayProduct')"--->
+	<div id="dietSelect" name="dietSelect" class="filterselect">
+		<div>
+			<input type="checkbox" id="Lactose-Free" name="Lactose-Free" value="Lactose-Free" class="checkboxstyle">
+			<label for="Lactose-Free">Lactose-Free</label>
+		</div>
+		<br>
+		<div>
+			<input type="checkbox" id="Nut-Free" name="Nut-Free" value="Nut-Free" class="checkboxstyle">
+			<label for="Nut-Free">Nut-Free</label>
+		</div>
+		<br> 
+		<div>
+			<input type="checkbox" id="Organic" name="Organic" value="Organic" class="checkboxstyle">
+			<label for="Organic">Organic</label>
+		</div>
+		<br>
+	<button id="filter" type="button" class="filterbutton" onclick="populateListProductChoices('displayProduct')"><strong> Filter</strong></button>
+	</div>
+
+	<!--
+	<select id="dietSelect" name="dietSelect" onchange="populateListProductChoices(this.id, 'displayProduct')">
+	<option value=""></option>
+	<option value="Vegetarian">Vegetarian</option>
+    <option value="Gluten-Free">Gluten-Free</option>
+	<option value="Lactose-Free">Lactose-Free</option>
+	<option value="Nut-Free">Nut-Free</option>
+	<option value="Organic">Organic</option>
+    <option value="None">None</option>
+	</select>
+	--->
+</div>
+
+<div id="Products" class="tabcontent filterproducts">
+  <div class="titleblack">YOUR TARGETED PRODUCTS</div>
+	<br>
+  <div class="filterfollowing">We preselected products based on your restrictions.</div>
+	<br>
+	<br>
+	<div class="filterfollowing">Choose items to buy:</div>
+	 <div id="displayProduct" style="overflow-y: scroll; height:350px;"></div>
+	<br>
+	 <button id="addCart" type="button" class="block" onclick="selectedItems()">
+    Add selected items to cart &nbsp;&nbsp; </button>
+</div>
+
+<div id="Cart" class="tabcontent cart">
+  <div class="carttitle">CART</div>
+  <div class="hereisyourcart">Here is your cart.</div>
+  <div id="displayCart"></div>
+</div>
+<div class="footer"> Website created by David Stewart</div>
+</div>
+	
+
+
+<script src="scripts/groceries.js"></script><script src="scripts/main.js"></script>
+
+</body>
+</html>
