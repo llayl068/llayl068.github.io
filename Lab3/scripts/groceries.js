@@ -9,7 +9,7 @@ var products = [
 		nutFree: true,
 		organic: true,
 		lactoseFree: true,
-		image: "../Lab 3/images/brocoli.jpg",
+		image: "../Lab3/images/brocoli.jpg",
 		price: 1.99
 	},
 	{
@@ -17,7 +17,7 @@ var products = [
 		nutFree: true,
 		organic: false,
 		lactoseFree: true,
-		image: "../Lab 3/images/bread.jpg",
+		image: "../Lab3/images/bread.jpg",
 		price: 2.35
 	},
 	{
@@ -25,7 +25,7 @@ var products = [
 		nutFree: true,
 		organic: true,
 		lactoseFree: true,
-		image: "../Lab 3/images/salmon.jpg",
+		image: "../Lab3/images/salmon.jpg",
 		price: 10.00
 	},
 	{
@@ -33,7 +33,7 @@ var products = [
 		nutFree: true,
 		organic: false,
 		lactoseFree: true,
-		image: "../Lab 3/images/potatochips.jpg",
+		image: "../Lab3/images/potatochips.jpg",
 		price: 1.75
 	},
 	{
@@ -41,14 +41,14 @@ var products = [
 		nutFree: true,
 		organic: true,
 		lactoseFree: true,
-		image: "../Lab 3/images/spinach.jpg",
+		image: "../Lab3/images/spinach.jpg",
 		price: 4.00
 	},{
 		name: "Eggs",
 		nutFree: true,
 		organic: true,
 		lactoseFree: true,
-		image: "../Lab 3/images/eggs.jpg",
+		image: "../Lab3/images/eggs.jpg",
 		price: 2.00
 	},
 	{
@@ -56,7 +56,7 @@ var products = [
 		nutFree: true,
 		organic: false,
 		lactoseFree: false,
-		image: "../Lab 3/images/milk.jpg",
+		image: "../Lab3/images/milk.jpg",
 		price: 2.05
 	},
 	{
@@ -64,7 +64,7 @@ var products = [
 		nutFree: false,
 		organic: true,
 		lactoseFree: true,
-		image: "../Lab 3/images/almondmilk.jpg",
+		image: "../Lab3/images/almondmilk.jpg",
 		price: 1.75
 	},
 	{
@@ -72,7 +72,7 @@ var products = [
 		nutFree: true,
 		organic: true,
 		lactoseFree: true,
-		image: "../Lab 3/images/steak.jpg",
+		image: "../Lab3/images/steak.jpg",
 		price: 12.00
 	},
 	{
@@ -80,7 +80,7 @@ var products = [
 		nutFree: true,
 		organic: false,
 		lactoseFree: true,
-		image: "../Lab 3/images/soda.jpg",
+		image: "../Lab3/images/soda.jpg",
 		price: 1.25
 	},
 	{
@@ -88,7 +88,7 @@ var products = [
 		nutFree: true,
 		organic: true,
 		lactoseFree: true,
-		image: "../Lab 3/images/apples.jpg",
+		image: "../Lab3/images/apples.jpg",
 		price: 1.05
 	},
 	{
@@ -96,7 +96,7 @@ var products = [
 		nutFree: false,
 		organic: false,
 		lactoseFree: true,
-		image: "../Lab 3/images/trailmix.jpg",
+		image: "../Lab3/images/trailmix.jpg",
 		price: 3.05
 	}
 	
