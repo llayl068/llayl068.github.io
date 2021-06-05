@@ -1,8 +1,7 @@
 	
-// Array of products, each product is an object with different fieldset
-// A set of ingredients should be added to products		 
+// Array of products, each product is an object with different fieldset 
 
-
+//
 var products = [
 	{
 		name: "Brocoli",
