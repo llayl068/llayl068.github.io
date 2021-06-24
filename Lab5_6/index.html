@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Veterinary Clinic</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="styles/style.css" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="scripts/service.js"></script>
+  <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/themes/excite-bike/jquery-ui.css" rel="stylesheet" type="text/css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	
+  <script>
+	$(document).ready(function() {
+	  $('#main-nav li a').click(function(e) {
+
+		var targetHref = $(this).attr('href');
+
+		$('html, body').animate({
+			scrollTop: $(targetHref).offset().top
+		}, 1000);
+
+		e.preventDefault();
+	  });
+	});
+  
+  </script>
+  <script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  </script>
+  <script>
+  	$(document).ready(function(){
+    	$('button').click(function(){
+        	$('.alert').show()
+    	}) 
+	});
+  </script>
+</head>
+	
+<body>
+<div class="page-header text-center" style="background-color:white" >
+<img src="images/David's.png" alt="David's Vet Icon"  width="300px" >
+</div>
+<div class="container text-center" style="background-color:#FF54DD">
+<ul id="main-nav">
+	
+	<div class="row" style="color:white">
+		<div class="col-sm-3" style="color: black">
+			<a href="#services">Services</a>
+		</div>
+		<div class="col-sm-3">
+			<a href="#location">Location</a>
+		</div>
+		<div class="col-sm-3">
+			<a href="#ourstaff">Our Staff</a>
+		</div>
+		<div class="col-sm-3">
+			<a href="#bookappointment">Book Appointment</a>
+		</div>
+	</div>
+</ul>
+</div>
+	
+<div class="container text-center">
+	<i><h2 style="color:black">Welcome to David's Veterinary Clinic</h2></i>
+</div>
+<br>
+ 
+<section id="offeredservices">
+<div class="container">
+	<div class="row">
+		 <h3> 
+			 <img src="https://img.icons8.com/ios/50/000000/dog-collar.png" width="15%">
+			 Offered Services:
+		</h3>
+	</div>
+	<br>
+  <div class="row">
+		<div class="col-sm-6 border border-dark">
+			<div class="row">
+			<div class="col-sm-6">
+				<div>
+					<div>
+						<h4>
+							<img src="https://img.icons8.com/ios-filled/50/000000/heart-plus.png" width="10%">
+							<u>Medical</u>	
+						</h4>
+					</div>
+				</div>
+				<ul class="list-group list-group-flush">
+					<li class="list-group-item">Medical Care</li>
+					<li class="list-group-item">Surgery</li>
+					<li class="list-group-item">Chiropractic Services</li>
+					<li class="list-group-item">General Check-up</li>
+				</ul>
+				</div>
+				<div class="col-sm-6">
+						<h4>
+							<img src="https://img.icons8.com/fluent-systems-filled/48/000000/hair-brush.png" width="10%">
+							<u>Grooming</u>
+						</h4>
+				<ul class="list-group list-group-flush">
+					<li class="list-group-item">Dentistry Service</li>
+					<li class="list-group-item">Bathing</li>
+					<li class="list-group-item">Nail Trimming</li>
+				</ul>
+			</div>
+			
+			</div>
+				
+		</div>
+	     <div class="col-sm-4 text-center">
+			<img src="images/veterinarian.jpg" alt="David's Veterinary Clinic Logo"  height="400px" class="border border-dark img-fluid" style="width:100%">
+    	</div>
+    </div>
+
+  </div>
+</div>
+</section>
+<br>
+<section id="location">
+<div class="container" style="background-color:grey">
+	<br>
+	<h3 style="color:white">
+		<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+width="38" height="38"
+viewBox="0 0 172 172"
+style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M120.4,6.88c-10.2125,0 -19.14844,5.95281 -23.90531,14.67375c-3.27875,-0.52406 -6.59781,-0.84656 -9.80937,-0.88687v-0.02688h-0.68531c-39.90937,0 -72.24,32.33063 -72.24,72.24c0,39.90938 32.33063,72.24 72.24,72.24c39.90938,0 72.24,-32.33062 72.24,-72.24c0,-15.43969 -5.24062,-30.55687 -14.31094,-42.785c2.39187,-5.4825 3.99094,-10.535 3.99094,-14.31094c0,-15.82938 -12.38937,-28.90406 -27.52,-28.90406zM120.4,13.76c11.35469,0 20.64,9.97063 20.64,22.02406c0,8.25062 -11.00531,27.50656 -20.64,41.61594c-9.63469,-14.10937 -20.64,-33.36531 -20.64,-41.61594c0,-12.05344 9.28531,-22.02406 20.64,-22.02406zM120.4,20.64c-7.56531,0 -13.76,6.19469 -13.76,13.76c0,7.56531 6.19469,13.76 13.76,13.76c7.56531,0 13.76,-6.19469 13.76,-13.76c0,-7.56531 -6.19469,-13.76 -13.76,-13.76zM120.4,27.52c3.84313,0 6.88,3.03688 6.88,6.88c0,3.84313 -3.03687,6.88 -6.88,6.88c-3.84312,0 -6.88,-3.03687 -6.88,-6.88c0,-3.84312 3.03688,-6.88 6.88,-6.88zM89.44,27.68125c1.46469,0.06719 2.96969,0.20156 4.47469,0.37625c-0.645,2.4725 -1.03469,5.0525 -1.03469,7.72656c0,4.89125 2.64719,11.90562 6.28875,19.25594h-9.72875zM82.56,27.97688v27.06312h-21.6075c5.02563,-14.63344 12.7925,-24.91312 21.6075,-27.06312zM66.73063,30.40906c-5.41531,5.97969 -9.90344,14.43187 -13.115,24.63094h-20.855c8.23719,-11.55625 20.08906,-20.35781 33.97,-24.63094zM140.54281,57.14969c6.46344,9.50031 10.07812,20.70719 10.68281,32.29031h-27.4125c-0.01344,-1.57219 -0.08063,-3.09062 -0.17469,-4.64937c3.9775,-5.73781 11.0725,-16.36688 16.90438,-27.64094zM28.43375,61.92h23.27375c-2.01562,8.37156 -3.225,17.64344 -3.45344,27.52h-27.43938c0.51063,-9.91687 3.15781,-19.25594 7.61906,-27.52zM58.85625,61.92h23.70375v27.52h-27.42594c0.25531,-9.84969 1.54531,-19.21562 3.72219,-27.52zM89.44,61.92h13.41063c4.95844,8.90906 10.23937,16.95813 13.77344,22.09125c0.1075,1.77375 0.17469,3.60125 0.22844,5.42875h-27.4125zM20.81469,96.32h27.43938c0.22844,9.87656 1.43781,19.14844 3.45344,27.52h-23.27375c-4.46125,-8.26406 -7.10844,-17.60312 -7.61906,-27.52zM55.13406,96.32h27.42594v27.52h-23.70375c-2.17687,-8.30437 -3.46687,-17.67031 -3.72219,-27.52zM89.44,96.32h27.42594c-0.25531,9.84969 -1.54531,19.21563 -3.72219,27.52h-23.70375zM123.74594,96.32h27.43938c-0.51063,9.91688 -3.15781,19.25594 -7.61906,27.52h-23.27375c2.01563,-8.37156 3.225,-17.64344 3.45344,-27.52zM32.76063,130.72h20.855c3.21156,10.19906 7.69969,18.65125 13.115,24.63094c-13.88094,-4.27312 -25.73281,-13.07469 -33.97,-24.63094zM60.9525,130.72h21.6075v27.07656c-8.80156,-2.16344 -16.58187,-12.44313 -21.6075,-27.07656zM89.44,130.72h21.6075c-5.02562,14.63344 -12.80594,24.91313 -21.6075,27.07656zM118.38438,130.72h20.855c-8.23719,11.55625 -20.08906,20.35781 -33.97,24.63094c5.41531,-5.97969 9.90344,-14.43187 13.115,-24.63094z"></path></g></g></svg>
+		<u>Location</u>
+	</h3>
+	<div class="container" style="color:white">
+		<div class="row justify-content-md">
+			<div class="col-sm-3">
+				<br>
+				<div style="font-size:25px">75 Laurier Ave. E</div>
+				<div style="font-size:25px">Ottawa, ON K1N 6N5</div>
+				<div style="font-size:25px">Canada</div>
+			</div>
+			<div class="col-sm-6" style="text-align:center">
+				<img src="images/map.png" alt="David's Veterinary Clinic Map"  height="350" class="img-fluid" style="width:100%" >
+				<br>
+				<br>
+			</div>
+		</div>
+		<div class="row"> </div>
+	</div>
+</div>
+</section>
+<br>
+<section id="ourstaff">
+<div class="container" Style="width:80%">
+	<div class="row">
+		<h3>
+			<img src="https://img.icons8.com/material-rounded/96/000000/conference-background-selected.png" width="20%">Our  Staff
+		</h3>
+		<!--<div class="col-sm-2">
+			<h3>Our Staff</h3>
+		</div>--->
+	</div>
+	<div class="row justify-content-md-center">
+		<div class="col-sm-3 border border-dark" background>
+			<div>
+				<br>
+				<div class="text-center"><u><b>Erlich Bachman</b></u></div>
+				<div class="text-center">
+					<img src="images/erlich.jpg" alt="Erlich Bachman Image"  height="200px" class="img-fluid img-thumbnail" style="width:90%">
+				</div>
+				<br>
+				<br>
+				<div>Erlich Backman s a deidcated animal enthusiast. At the age of 20 he founded his first non-profit "Aviato", a charity dedicated to aiding in protecting endangered birds> After graduating harvard at age 23, he began practicing as a veterinarian.  </div>
+			</div>
+		</div>
+		<div class="col-sm-1"></div>
+		<div class="col-sm-3 border border-dark">
+			<div>
+				<br>
+				<div class="text-center"><u><b>Richard Hendricks</b></u></div>
+				<div class="text-center">
+					<img src="images/richard.webp" alt="Richard Hendricks Image"  height="200px" class="img-fluid img-thumbnail" style="width:90%">
+				</div>
+				<br>
+				<br>
+				<div> Richard Hendricks, an animal advocate, studied with Erlich Bachman for 10 years. Graduating Stanford during its rule under Nelson Bighetti, Richard Graduated at the top of his class in animal biology </div>
+			</div>
+		</div>
+		<div class="col-sm-1"></div>
+		<div class="col-sm-3 border border-dark">
+			<div>
+				<br>
+				<div class="text-center"><u><b>Jian Yang</b></u></div>
+				<div class="text-center">
+					<img src="images/jian.png" alt="Jian Yang Image"  height="200px" class="img-fluid img-thumbnail" style="width:100%">
+				</div>
+				<br>
+				<br>
+				<div> Jian Yang, the founder of David's Veterinary Clinic has been working as a Veternarian for over 8 years and has received multiple awards for his discoveris in animal medicine. Jian Yang is a proud owner of Pied Piper Stock. </div>
+			</div>
+		</div>
+		
+	</div>
+</div>
+</section>
+<br>
+<section id="bookappointment">
+<div class="container">
+		<h3>
+			<img src="https://img.icons8.com/ios-filled/50/000000/calendar--v1.png" width="3%">
+			Book Appointment
+		</h3>
+	<div class="row">
+		<div class="col-sm-5">
+			<div class="form-group">
+    			<label for="fst">First Name:</label>
+    			<input type="text" class="form-control" id="fst" placeholder="Enter your First Name">
+    		</div>
+			<form>
+    		<div class="form-group">
+      			<label for="sel1">Service:</label>
+      			<select class="form-control" id="servicesel">
+        			<option value="Medical Care">Medical Care - $180</option>
+        			<option value="Dentistry Service">Dentistry Service - $120</option>
+        			<option value="Emergency Care">Emergency Care - $300</option>
+        			<option value="Surgery">Surgery - $700</option>
+					<option value="Chiropractic Services">Chiropractic Services - $280</option>
+					<option value="Bathing">Bathing - $80</option>
+					<option value="Nail Trimming">Nail Trimming - $45</option>
+      			</select>
+    		</div>
+			</form>
+
+		</div>
+		<div class="col-sm-5">
+			<div class="form-group">
+    			<label for="lst">Last Name:</label>
+    			<input type="password" class="form-control" id="pwd" placeholder="Enter your Last Name">
+    		</div>
+			<form>
+    		<div class="form-group">
+      			<label for="sel1">Staff:</label>
+      			<select class="form-control" name="staffsel" id="staffsel" onChange="staffdisableDates(this.value)">
+        			<option value="Erlich Bachman">Erlich Bachman</option>
+        			<option value="Richard Hendricks">Richard Hendricks</option>
+        			<option value="Jian Yang">Jian Yang</option>
+      			</select>
+    		</div>
+			</form>
+			
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-5">
+			    <form method="post">
+      			<div class="form-group">
+        			<label class="control-label" for="date">Date:</label>
+        			<input class="form-control datepicker" id="dateInput" name="date" placeholder="MM/DD/YYYY" type="text"/>
+      			</div>
+				</form>	
+				<div class="form-group">
+    			<label for="lst">Email:</label>
+    			<input type="password" class="form-control" id="pwd" placeholder="johndoe@example.com">
+    		</div>
+		</div>
+		<div class="col-sm-5">
+			    <div class="form-group">
+      			<label for="sel1">Time:</label>
+      			<select class="form-control" id="timesel">
+					<option value="9:00 AM">9:00 AM</option>
+					<option value="10:00 AM">10:00 AM</option>
+					<option value="11:00 AM">11:00 AM</option>
+        			<option value="12:00 PM">12:00 PM</option>
+        			<option value="1:00 PM">1:00 PM</option>
+        			<option value="2:00 PM">2:00 PM</option>
+        			<option value="3:00 PM">3:00 PM</option>
+					<option value="4:00 PM">4:00 PM</option>
+					<option value="5:00 PM">5:00 PM</option>
+					<option value="6:00 PM">6:00 PM</option>
+      			</select>
+    		</div>
+				<div class="form-group">
+    			<label for="lst">Phone Number:</label>
+    			<input type="text" class="form-control error" id="phone" placeholder="XXX-XXX-XXXX">
+    			</div>
+		</div>
+	</div>
+	<div class="row">
+        <div class="col-sm-10">
+            <div class="card">
+                <div class="card-header">
+                    <strong>Payment</strong>
+                    <small>enter your card details</small>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="name">Name (As indicated on card)</label>
+                                <input class="form-control" id="name" type="text" placeholder="Enter your name">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="ccnumber">Credit Card Number</label>
+                                <div class="input-group">
+                                    <input class="form-control error" type="text" title="Your credit card information is required now as we need a $20 deposit incase of cancellation" placeholder="XXXX XXXX XXXX XXXX" id="creditcard">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">
+											<img src="https://img.icons8.com/android/24/000000/bank-card-back-side.png"/>
+                                            <!--<i class="mdi mdi-credit-card"></i>--->
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+						    <div class="col-sm-3">
+                            <div class="form-group">
+                                <label for="cvv">CVV/CVC</label>
+                                <input class="form-control" id="cvv" type="text" placeholder="123">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-sm-3">
+                            <label for="ccmonth">Exp. Month</label>
+                            <select class="form-control" id="ccmonth">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                                <option>11</option>
+                                <option>12</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-sm-3">
+                            <label for="ccyear">Exp. Year</label>
+                            <select class="form-control" id="ccyear">
+                                <option>2014</option>
+                                <option>2015</option>
+                                <option>2016</option>
+                                <option>2017</option>
+                                <option>2018</option>
+                                <option>2019</option>
+                                <option>2020</option>
+                                <option>2021</option>
+                                <option>2022</option>
+                                <option>2023</option>
+                                <option>2024</option>
+                                <option>2025</option>
+                            </select>
+                        </div>
+						<div class="col-sm-3">
+                            <div class="form-group">
+                                <label for="cvv">Postal Code</label>
+                                <input class="form-control" id="postal" type="text" placeholder="A1B2C3">
+                            </div>
+                        </div
+                    </div>
+                </div>
+            </div>
+        </div>
+			<br>
+			<div class="row">
+		<div class="col-sm-5">
+			<div class="form-group"> <!-- Submit button -->
+        		<button class="btn btn-primary " name="submit" type="submit" style="background-color:#FF54DD" onClick="submit()">Submit</button>
+      		</div>
+		</div>
+	</div>	
+    </div>
+</div>
+</section>
+<br>
+<br>
+<div class="container page-footer text-center" style="background-color:#FF54DD">
+	<div style="color:white">Website Created by David Stewart</div>
+</div>
+
+</body>
+</html>
+

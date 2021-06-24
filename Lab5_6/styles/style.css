@@ -1,0 +1,19 @@
+@charset "utf-8";
+navfont{
+	font-size: 20px;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+}
+a{
+	color:white;
+	font-size: 20px;
+}
+
+.iconw{
+	width=100% !important;
+}
+
+.alert{
+    display: none;
+}
