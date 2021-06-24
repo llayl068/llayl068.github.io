@@ -48,13 +48,13 @@ function disableDates(date) {
 }
 
 function staffdisableDates(staff){
-	if (staff=="erlich"){
+	if (staff=="Erlich Bachman"){
 		unavailableDates = ["06/30/2021","07/01/2021","07/03/2021"];
 	}
-	else if (staff=="richard"){
+	else if (staff=="Richard Hendricks"){
 		unavailableDates = ["06/29/2021","06/30/2021","07/01/2021"];
 	}
-	else if (staff=="jian"){
+	else if (staff=="Jian Yang"){
 		unavailableDates = ["06/28/2021","07/01/2021","07/02/2021"];
 	}
 	else{
